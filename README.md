@@ -12,4 +12,4 @@ Available symbols and multipliers are as follows:
 - "$": 100000x
 
 
-The player can deposti any amount of credits, but when his balance reaches zero, he automatically loses and the game ends.
+The player can deposit any amount of credits, but when his balance reaches zero, he automatically loses and the game ends.
