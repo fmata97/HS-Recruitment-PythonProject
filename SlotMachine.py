@@ -19,7 +19,7 @@ class SlotMachine:
 
     def play(self):
         while True:
-            self.bet = eval(input("Place your bet: $"))
+            self.bet = eval(input("\nPlace your bet: $"))
             if self.bet > self.balance:
                 print("You don't have enough money!")
             elif self.bet > 0:
