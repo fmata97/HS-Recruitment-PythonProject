@@ -39,9 +39,9 @@ class SlotMachine:
         if self.slot1.result == self.slot2.result == self.slot3.result:
             prize = self.bet*symbols[self.slot1.result][1]
             self.balance += prize
-            print(f"You won ${prize}!")
+            print(f"You won ${prize}! New balance: ${self.balance}")
         else:
-            print("You lost! Better luck next time.")
+            print(f"You lost! Credits left: ${self.balance}")
 
     def __str__(self):
         return f"{self.slot1}|{self.slot2}|{self.slot3}"
