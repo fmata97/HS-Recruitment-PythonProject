@@ -1,6 +1,6 @@
 # Fábio Mata - 102802
 
-from SlotMachine import *
+from SlotMachine import SlotMachine, Slot
 
 # the game itself
 

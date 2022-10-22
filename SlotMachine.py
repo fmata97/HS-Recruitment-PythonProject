@@ -14,12 +14,21 @@ class SlotMachine:
         self.slot3 = Slot()
         self.bet = 0
         while True:
-            self.balance = eval(input("Value to deposit: $"))
+            try:
+                self.balance = int(input("Value to deposit: $"))
+            except ValueError:
+                print("Invalid input!")
+                continue
+
             if self.balance > 0: break
 
     def play(self):
         while True:
-            self.bet = eval(input("\nPlace your bet: $"))
+            try:
+                self.bet = int(input("\nPlace your bet: $"))
+            except ValueError:
+                print("Invalid input!")
+                continue
             if self.bet > self.balance:
                 print("You don't have enough money!")
             elif self.bet > 0:
